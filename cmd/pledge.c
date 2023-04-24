@@ -443,6 +443,7 @@ void ApplyFilesystemPolicy(unsigned long ipromises) {
     UnveilIfExists("/usr/lib64", "rx");
     UnveilIfExists("/usr/local/lib", "rx");
     UnveilIfExists("/usr/local/lib64", "rx");
+    UnveilIfExists("/usr/libexec", "rx");
     UnveilIfExists("/etc/ld-musl-x86_64.path", "r");
     UnveilIfExists("/etc/ld.so.conf", "r");
     UnveilIfExists("/etc/ld.so.cache", "r");
